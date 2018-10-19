@@ -1,0 +1,12 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "sass":"node-sass -w scss/ -o Dist/css/ --recursive",
+    "test": "test"
+  },
+  "author": "Rishabh Mittal",
+  "license": "ISC"
+}
