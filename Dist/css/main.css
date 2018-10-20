@@ -36,7 +36,8 @@
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hidden; }
+    overflow: hidden;
+    color: #444; }
   .menu-nav {
     margin: 0;
     padding: 0;
@@ -76,7 +77,8 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #eece1a;
+      transform: scale(1.05); }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -106,7 +108,14 @@
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px; } }
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/profile(1).jpg");
+      height: 150px;
+      width: 150px; } }
 
 @media mediaSm {
   main#home h1 {
@@ -123,13 +132,16 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/main_cover.jpg);
+    background: url(../img/cup-of-coffee-1280537_1920.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
+      height: 100%;
+      width: 100%;
       z-index: -1;
       width: 100%;
       background: rgba(68, 68, 68, 0.9); }
@@ -162,6 +174,9 @@ header {
 .text-secondary {
   color: #eece1a; }
 
+.text-primary {
+  color: #fff; }
+
 main {
   padding: 4rem;
   height: 100%; }
@@ -170,9 +185,11 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
+        transform: scale(1.25);
         color: #eece1a;
         transition: all 0.5s ease-out; }
   main#home {
+    text-align: center;
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }

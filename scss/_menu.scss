@@ -62,6 +62,7 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
+        color: $primary-color;
     }
 
     &-nav{
@@ -118,6 +119,7 @@
 
         &:hover{
             color: $secondary-color;
+            transform: scale(1.05);
         }
     }
     
