@@ -232,6 +232,10 @@ main {
       .boxes div:hover span {
         color: #000; }
 
+#map {
+  align-items: center;
+  padding-left: 20rem; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
