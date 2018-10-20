@@ -4,7 +4,7 @@
   "description": "Personal Website",
   "main": "index.js",
   "scripts": {
-    "sass":"node-sass -w scss/ -o Dist/css/ --recursive",
+    "sass":"node-sass -w scss/ -o dist/css/ --recursive",
     "test": "test"
   },
   "author": "Rishabh Mittal",
